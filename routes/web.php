@@ -87,4 +87,5 @@ Route::delete('/blog/{1}', [PostsController::class, 'destroy']);
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/ai', [AiController::class, 'index']);
-Route::post('/ai', [AiController::class, 'result'])->name('result');
+Route::post('/ai-result', [AiController::class, 'result'])->name('result');
+Route::post('/ai-chat', [AiController::class, 'chat'])->name('chat');
